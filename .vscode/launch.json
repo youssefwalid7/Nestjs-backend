@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Dev",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "start:dev"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "start:debug"
+            ],
+            "console": "integratedTerminal"
+        },
+		{
+            "type": "node",
+            "request": "launch",
+            "name": "Build",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "build"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Migration Create",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "migration:create"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Migration Generate",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "migration:generate"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}

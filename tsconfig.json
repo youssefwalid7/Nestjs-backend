@@ -1,0 +1,47 @@
+{
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	},
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+		/* Strict Type-Checking Options */
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": false,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+
+  	"paths": {
+			"@/*": ["src/*"],
+			"@entities/*": ["src/data-service/entities/*"],
+			"@repositories/*": ["src/data-service/repositories/*"],
+			"@constants/*": ["src/utilities/constants/*"],
+			"@decorators/*": ["src/common/decorators/*"],
+			"@providers/*": ["src/providers/*"],
+			"@mappers/*": ["src/common/mappers/*"]
+			}
+		},
+		"exclude": ["node_modules"]
+}

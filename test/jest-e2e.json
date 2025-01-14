@@ -1,0 +1,18 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+	"^@/(.*)$": "<rootDir>/../src/$1",
+    "^@entities/(.*)$": "<rootDir>/../src/data-service/entities/$1",
+    "^@repositories/(.*)$": "<rootDir>/../src/data-service/repositories/$1",
+	"^@constants/(.*)$": "<rootDir>/../src/utilities/constants/$1",
+	"^@decorators/(.*)$": "<rootDir>/../src/common/decorators/$1",
+	"^@providers/(.*)$": "<rootDir>/../src/providers/$1",
+	"^@mappers/(.*)$": "<rootDir>/../src/common/mappers/$1"
+  }
+}
